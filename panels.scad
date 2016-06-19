@@ -95,80 +95,80 @@ module right_upper_shelf_3() {
 
 module stud_front_right_corner() {
     color(stud_color)
-    stud(shelves_z - in(8));
+    stud(stud_front_right_corner_l);
 }
 
 module stud_front_left_corner() {
     color(stud_color)
-    stud(shelves_z - in(8));
+    stud(stud_front_left_corner_l);
 }
 
 module stud_front_top_crossbeam() {
     color(stud_color)
-    stud(shelves_x);
+    stud(stud_front_top_crossbeam_l);
 }
 
 module stud_under_front_desk_crossbeam() {
     color(stud_color)
-    stud(shelves_x-2*in(3.5));
+    stud(stud_under_front_desk_crossbeam_l);
 }
 
 module stud_under_right_front_desk_crossbeam() {
     color(stud_color)
-    stud(ft(4,8.25));
+    stud(stud_under_right_front_desk_crossbeam_l);
 }
 
 module stud_under_right_rear_desk_crossbeam() {
     color(stud_color)
-    stud(ft(3,3.25));
+    stud(stud_under_right_rear_desk_crossbeam_l);
 }
 
 module stud_under_left_front_desk_crossbeam() {
     color(stud_color)
-    stud(ft(3,9.5));
+    stud(stud_under_left_front_desk_crossbeam_l);
 }
 
 module stud_under_left_rear_desk_crossbeam() {
     color(stud_color)
-    stud(ft(3,4));
+    stud(stud_under_left_rear_desk_crossbeam_l);
 }
 
 module stud_support_under_front_desk() {
     color(stud_color)
-    stud(in(table_z-in(0.75)));
+    stud(stud_support_under_front_desk_l);
 }
 
 module stud_right_rear_corner() {
     color(stud_color)
-    stud(shelves_z);
+    stud(stud_right_rear_corner_l);
 }
 
 module stud_left_rear_corner() {
     color(stud_color)
-    stud(shelves_z);
+    stud(stud_left_rear_corner_l);
 }
 
 module stud_right_wall_middle() {
     color(stud_color)
-    stud(shelves_z);
+    stud(stud_right_wall_middle_l);
 }
 
 module stud_left_wall_middle() {
     color(stud_color)
-    stud(ft(5,8.5));
+    stud(stud_left_wall_middle_l);
 }
 
 module stud_left_wall_top_rear() {
     color(stud_color)
-    stud(ft(3,3.5));
+    stud(stud_left_wall_top_rear_l);
 }
 
 module stud_rear_top_crossbeam() {
     color(stud_color)
-    stud(shelves_x-in(1.5));
+    stud(stud_rear_top_crossbeam_l);
 }
 
 module stud_hinged_table_support() {
     color(stud_color)
-    stud(in(table_z -0.75));
+    stud(stud_hinged_table_support_l);
 }

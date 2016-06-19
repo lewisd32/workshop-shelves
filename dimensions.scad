@@ -63,5 +63,34 @@ right_upper_shelf_2_y = ft(8,4);
 right_upper_shelf_3_x = ft(1.5);
 right_upper_shelf_3_y = ft(4,11.25);
 
+stud_front_right_corner_l = shelves_z - in(8);
 
+stud_front_left_corner_l = shelves_z - in(8);
 
+stud_front_top_crossbeam_l = shelves_x;
+
+stud_under_front_desk_crossbeam_l = shelves_x-2*in(3.5);
+
+stud_under_right_front_desk_crossbeam_l = ft(4,8.25);
+
+stud_under_right_rear_desk_crossbeam_l = ft(3,3.25);
+
+stud_under_left_front_desk_crossbeam_l = ft(3,9.5);
+
+stud_under_left_rear_desk_crossbeam_l = ft(3,4);
+
+stud_support_under_front_desk_l = in(table_z-in(0.75));
+
+stud_right_rear_corner_l = shelves_z;
+
+stud_left_rear_corner_l = shelves_z;
+
+stud_right_wall_middle_l = shelves_z;
+
+stud_left_wall_middle_l = ft(5,8.5);
+
+stud_left_wall_top_rear_l = ft(3,3.5);
+
+stud_rear_top_crossbeam_l = shelves_x-in(1.5);
+
+stud_hinged_table_support_l = in(table_z -0.75);
