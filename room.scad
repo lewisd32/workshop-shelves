@@ -4,6 +4,10 @@ room_x = ft(8,11);
 room_y = ft(9,11);
 room_z = ft(8);
 
+shelves_x = room_x - in(2);
+shelves_y = room_y - in(2);
+shelves_z = room_z - in(2);
+
 wireframe_t = 1;
 
 closet_x = 1.375;
