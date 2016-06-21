@@ -52,13 +52,13 @@ left_lower_shelf_x = ft(1.5);
 left_lower_shelf_y = ft(3,6);
 
 right_hinged_table_x = ft(1,10);
-right_hinged_table_y = ft(3,4.75) - in(1.5);
+right_hinged_table_y = ft(3,0.75) - in(1.5);
 
 right_upper_shelf_1_x = ft(1.5);
-right_upper_shelf_1_y = ft(8,4);
+right_upper_shelf_1_y = ft(8,0);
 
 right_upper_shelf_2_x = ft(1.5);
-right_upper_shelf_2_y = ft(8,4);
+right_upper_shelf_2_y = ft(8,0);
 
 right_upper_shelf_3_x = ft(1.5);
 right_upper_shelf_3_y = ft(4,11.25);
@@ -73,7 +73,7 @@ stud_under_front_desk_crossbeam_l = shelves_x-2*in(3.5);
 
 stud_under_right_front_desk_crossbeam_l = ft(4,8.25);
 
-stud_under_right_rear_desk_crossbeam_l = ft(3,3.25);
+stud_under_right_rear_desk_crossbeam_l = ft(2,11.25);
 
 stud_under_left_front_desk_crossbeam_l = ft(3,9.5);
 
@@ -89,7 +89,7 @@ stud_right_wall_middle_l = shelves_z;
 
 stud_left_wall_middle_l = ft(5,8.5);
 
-stud_left_wall_top_rear_l = ft(3,3.5);
+stud_right_wall_top_rear_l = ft(2,11.5);
 
 stud_rear_top_crossbeam_l = shelves_x-in(1.5);
 

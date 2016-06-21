@@ -158,9 +158,9 @@ module stud_left_wall_middle() {
     stud(stud_left_wall_middle_l);
 }
 
-module stud_left_wall_top_rear() {
+module stud_right_wall_top_rear() {
     color(stud_color)
-    stud(stud_left_wall_top_rear_l);
+    stud(stud_right_wall_top_rear_l);
 }
 
 module stud_rear_top_crossbeam() {

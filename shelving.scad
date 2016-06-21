@@ -121,7 +121,7 @@ translate([(shelves_x-in(3.5))/2,in(6),0])
 stud_support_under_front_desk();
 
 // right rear corner
-translate([0,ft(8,4) - in(1.5), 0])
+translate([0,ft(8,0) - in(1.5), 0])
 stud_right_rear_corner();
 
 // left rear corner
@@ -140,7 +140,7 @@ stud_left_wall_middle();
 translate([0,ft(4,11),shelves_z-in(3.5)])
 rotate([0,-90,0])
 rotate([-90,0,0])
-stud_left_wall_top_rear();
+stud_right_wall_top_rear();
 
 // rear top crossbeam
 translate([in(1.5),ft(7,3),shelves_z])
