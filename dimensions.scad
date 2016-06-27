@@ -14,7 +14,7 @@ shelves_x = room_x - in(2);
 shelves_y = room_y - in(2);
 shelves_z = room_z - in(2);
 
-table_z = 29.25;
+table_z = 29.25 - 1; // 1 inch off for rubber under
 
 wireframe_t = 1;
 
@@ -33,6 +33,9 @@ left_table_y = ft(2,6.75);
 front_center_table_x = shelves_x-120*2;
 front_center_table_y = ft(1,11);
 
+left_lower_shelf_1_x = ft(1.5);
+left_lower_shelf_1_y = ft(7,6);
+
 left_upper_shelf_1_x = ft(1.5);
 left_upper_shelf_1_y = ft(3,7);
 
@@ -47,9 +50,6 @@ left_upper_shelf_4_y = ft(7,6);
 
 left_upper_shelf_5_x = ft(1.5);
 left_upper_shelf_5_y = ft(7,6);
-
-left_lower_shelf_x = ft(1.5);
-left_lower_shelf_y = ft(3,6);
 
 right_hinged_table_x = ft(1,10);
 right_hinged_table_y = ft(3,0.75) - in(1.5);
@@ -69,7 +69,7 @@ stud_front_left_corner_l = shelves_z - in(8);
 
 stud_front_top_crossbeam_l = shelves_x;
 
-stud_under_front_desk_crossbeam_l = shelves_x-2*in(3.5);
+stud_under_front_desk_crossbeam_l = shelves_x-2*in(1.5);
 
 stud_under_right_front_desk_crossbeam_l = ft(4,8.25);
 

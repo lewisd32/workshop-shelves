@@ -2,6 +2,9 @@ include <dimensions.scad>;
 use <panels.scad>;
 
 kerf=0.3;
+showDimensions=true;
+
+
 
 translate([0,0,-1])
 cube([ft(4), ft(8), in(0.75)]);
@@ -9,10 +12,10 @@ cube([ft(4), ft(8), in(0.75)]);
 translate([ft(5),0,-1])
 cube([ft(4), ft(8), in(0.75)]);
 
-translate([ft(10),0,-1])
+translate([ft(0),ft(9),-1])
 cube([ft(4), ft(8), in(0.75)]);
 
-translate([ft(15),0,-1])
+translate([ft(5),ft(9),-1])
 cube([ft(4), ft(8), in(0.75)]);
 
 
@@ -54,7 +57,7 @@ translate([ft(5),0,0]) {
 }
 
 // third sheet
-translate([ft(10),0,0]) {
+translate([ft(0),ft(9),0]) {
     translate([ft(1.5)+kerf,left_upper_shelf_3_y+kerf,0])
     left_table();
 
@@ -72,11 +75,18 @@ translate([ft(10),0,0]) {
 }
 
 // fourth sheet
-translate([ft(15),0,0]) {
+translate([ft(5),ft(9),0]) {
     translate([0,0,0])
     right_upper_shelf_3();
 
-    translate([ft(1.5)+kerf,0,0])
+    translate([0,right_upper_shelf_3_y+kerf,0])
     right_hinged_table();
+    
+    translate([ft(4-1.5),0,0])
+    left_lower_shelf_1();
 
 }
+
+$vpr=[0, 0, 90];
+$vpd=750;
+$vpt = [ft(4.5), ft(8.5), 0];

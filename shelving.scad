@@ -50,6 +50,9 @@ right_upper_shelf_3();
 
 // LEFT
 
+translate([shelves_x-ft(1.5),0,in(table_z-0.75) - in(12)])
+left_lower_shelf_1();
+
 translate([shelves_x-ft(1.5),ft(1,0)+120,in(table_z-0.75)])
 left_table();
 
@@ -85,33 +88,28 @@ stud_front_top_crossbeam();
 
 // under front desk crossbeam
 // TODO: don't forget need 0.25" spacers in middle!!
-translate([in(3.5),ft(2),in(table_z-1-1.5)])
+translate([in(1.5),ft(2),in(table_z-1)])
 rotate([0,90,0])
-rotate([0,0,90])
 stud_under_front_desk_crossbeam();
 
 // under right front desk crossbeam
-translate([in(3.5),in(1.5),in(table_z-1-1.5)])
+translate([in(1.5),in(1.5),in(table_z-1)])
 rotate([0,90,90])
-rotate([0,0,90])
 stud_under_right_front_desk_crossbeam();
 
 // under right rear desk crossbeam
-translate([in(3.5),ft(4,11.25),in(table_z-1-1.5)])
+translate([in(1.5),ft(4,11.25),in(table_z-1)])
 rotate([0,90,90])
-rotate([0,0,90])
 stud_under_right_rear_desk_crossbeam();
 
 // under left front desk crossbeam
-translate([shelves_x,in(1.5),in(table_z-1-1.5)])
+translate([shelves_x,in(1.5),in(table_z-1)])
 rotate([0,90,90])
-rotate([0,0,90])
 stud_under_left_front_desk_crossbeam();
 
 // under left rear desk crossbeam
-translate([shelves_x,ft(4,0.5),in(table_z-1-1.5)])
+translate([shelves_x,ft(4,0.5),in(table_z-1)])
 rotate([0,90,90])
-rotate([0,0,90])
 stud_under_left_rear_desk_crossbeam();
 
 
