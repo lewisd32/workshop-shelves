@@ -9,13 +9,13 @@ showDimensions=true;
 translate([0,0,-1])
 cube([ft(4), ft(8), in(0.75)]);
 
-translate([ft(5),0,-1])
+translate([ft(4.5),0,-1])
 cube([ft(4), ft(8), in(0.75)]);
 
-translate([ft(0),ft(9),-1])
+translate([ft(0),ft(8.5),-1])
 cube([ft(4), ft(8), in(0.75)]);
 
-translate([ft(5),ft(9),-1])
+translate([ft(4.5),ft(8.5),-1])
 cube([ft(4), ft(8), in(0.75)]);
 
 
@@ -38,7 +38,7 @@ translate([0,0,0]) {
 }
 
 // second sheet
-translate([ft(5),0,0]) {
+translate([ft(4.5),0,0]) {
 
     translate([0,0,0])
     left_upper_shelf_4();
@@ -57,7 +57,7 @@ translate([ft(5),0,0]) {
 }
 
 // third sheet
-translate([ft(0),ft(9),0]) {
+translate([ft(0),ft(8.5),0]) {
     translate([ft(1.5)+kerf,left_upper_shelf_3_y+kerf,0])
     left_table();
 
@@ -75,7 +75,7 @@ translate([ft(0),ft(9),0]) {
 }
 
 // fourth sheet
-translate([ft(5),ft(9),0]) {
+translate([ft(4.5),ft(8.5),0]) {
     translate([0,0,0])
     right_upper_shelf_3();
 
@@ -88,5 +88,5 @@ translate([ft(5),ft(9),0]) {
 }
 
 $vpr=[0, 0, 90];
-$vpd=750;
-$vpt = [ft(4.5), ft(8.5), 0];
+$vpd=700;
+$vpt = [ft(4.25), ft(8.25), 0];

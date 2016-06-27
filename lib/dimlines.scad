@@ -91,13 +91,13 @@ DIM_LOWER_RIGHT = 3;
 
 DIM_LINE_WIDTH = .025*20; // width of dimension lines
 DIM_SPACE = .1;  // a spacing value to make it easier to adjust line spacing etc
-DIM_HEIGHT = .01; // height of lines
+DIM_HEIGHT = .1; // height of lines
 
 // refers to the size of the cross within a circle
 DIM_HOLE_CENTER = DIM_LINE_WIDTH * 6;
 
 // an approximation that sets the font size relative to the line widths
-DIM_FONTSCALE = DIM_LINE_WIDTH * .7;
+DIM_FONTSCALE = DIM_LINE_WIDTH * .7 * 1.4;
 
 
 
@@ -259,10 +259,8 @@ function convert_to_inches(length) =
 module dimensions(length, line_width=DIM_LINE_WIDTH, loc=DIM_CENTER) {
     inches_denominator = 64;
 
-    text = str(length);
-    text_inches = convert_to_inches(length);
+    text = convert_to_inches(length);
     space = len(text) * DIM_FONTSCALE * 7;
-    space_inches = (len(text_inches)-1) * DIM_FONTSCALE * 7;
 
     if (loc == DIM_CENTER) {
         line(length=length / 2 - space / 2, width=line_width, height=DIM_HEIGHT,
@@ -270,12 +268,6 @@ module dimensions(length, line_width=DIM_LINE_WIDTH, loc=DIM_CENTER) {
         translate([(length) / 2 - space / 2 * .9, -DIM_FONTSCALE * 3, 0])
         scale([DIM_FONTSCALE, DIM_FONTSCALE, DIM_FONTSCALE])
         drawtext(text);
-
-        translate([(length) / 2 - space_inches / 2 * .9, -DIM_FONTSCALE * 3, 0])
-        scale([DIM_FONTSCALE, DIM_FONTSCALE, DIM_FONTSCALE])
-        translate([0,-10,0])
-        drawtext(text_inches);
-
 
         translate([length / 2 + space / 2, 0, 0])
         line(length=length / 2 - space / 2, width=line_width, height=DIM_HEIGHT,
@@ -290,10 +282,6 @@ module dimensions(length, line_width=DIM_LINE_WIDTH, loc=DIM_CENTER) {
             scale([DIM_FONTSCALE, DIM_FONTSCALE, DIM_FONTSCALE])
             drawtext(text);
             
-            translate([-space_inches, -DIM_FONTSCALE * 3, 0])
-            scale([DIM_FONTSCALE, DIM_FONTSCALE, DIM_FONTSCALE])
-            translate([0,-10,0])
-            drawtext(text_inches);
         } else {
             if (loc == DIM_RIGHT) {
                 line(length=length, width=line_width, height=DIM_HEIGHT,
@@ -313,12 +301,6 @@ module dimensions(length, line_width=DIM_LINE_WIDTH, loc=DIM_CENTER) {
                               -DIM_FONTSCALE * 3, 0])
                     scale([DIM_FONTSCALE, DIM_FONTSCALE, DIM_FONTSCALE])
                     drawtext(text);
-
-                    translate([(length) / 2 - space_inches / 2 * .9,
-                              -DIM_FONTSCALE * 3, 0])
-                    scale([DIM_FONTSCALE, DIM_FONTSCALE, DIM_FONTSCALE])
-                    translate([0,-10,0])
-                    drawtext(text_inches);
 
                     translate([length, 0, 0])
                     line(length=length / 2, width=line_width, height=DIM_HEIGHT,
