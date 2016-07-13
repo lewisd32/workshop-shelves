@@ -2,7 +2,6 @@ include <dimensions.scad>;
 use <panels.scad>;
 
 kerf=0.3;
-showDimensions=true;
 
 
 

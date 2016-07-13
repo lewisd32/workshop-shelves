@@ -8,7 +8,7 @@ room_z = ft(8) - in(3); // room for lots of padding underneath, and ceiling clea
 
 room_x = ft(8,11);
 room_y = ft(9,11);
-room_z = ft(8);
+room_z = ft(7,11);
 
 shelves_x = room_x - in(2);
 shelves_y = room_y - in(2);
@@ -63,9 +63,9 @@ right_upper_shelf_2_y = ft(8,0);
 right_upper_shelf_3_x = ft(1.5);
 right_upper_shelf_3_y = ft(4,11.25);
 
-stud_front_right_corner_l = shelves_z - in(8);
+stud_front_right_corner_l = shelves_z - in(9.5);
 
-stud_front_left_corner_l = shelves_z - in(8);
+stud_front_left_corner_l = shelves_z - in(9.5);
 
 stud_front_top_crossbeam_l = shelves_x;
 

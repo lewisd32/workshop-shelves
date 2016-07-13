@@ -82,7 +82,7 @@ translate([shelves_x-in(3.5),0, 0])
 stud_front_left_corner();
 
 // front top crossbeam
-translate([0,in(1.5),shelves_z - in(8)])
+translate([0,in(1.5),shelves_z - in(9.5)])
 rotate([0,90,0])
 stud_front_top_crossbeam();
 
