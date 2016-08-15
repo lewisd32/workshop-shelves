@@ -91,3 +91,7 @@ translate([120,0,0])
 stud_under_left_front_desk_crossbeam();
 translate([120,0,stud_under_left_front_desk_crossbeam_l+kerf])
 stud_hinged_table_support();
+
+$vpr=[90, -90, 0];
+$vpd=400;
+$vpt = [82, 251, 154];

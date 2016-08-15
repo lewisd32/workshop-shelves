@@ -215,81 +215,177 @@ module right_upper_shelf_3() {
 module stud_front_right_corner() {
     color(stud_color)
     stud(stud_front_right_corner_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_front_right_corner_l);
+    }
 }
 
 module stud_front_left_corner() {
     color(stud_color)
     stud(stud_front_left_corner_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_front_left_corner_l);
+    }
 }
 
 module stud_front_top_crossbeam() {
     color(stud_color)
     stud(stud_front_top_crossbeam_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_front_top_crossbeam_l);
+    }
 }
 
 module stud_under_front_desk_crossbeam() {
     color(stud_color)
     stud(stud_under_front_desk_crossbeam_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_under_front_desk_crossbeam_l);
+    }
 }
 
 module stud_under_right_front_desk_crossbeam() {
     color(stud_color)
     stud(stud_under_right_front_desk_crossbeam_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_under_right_front_desk_crossbeam_l);
+    }
 }
 
 module stud_under_right_rear_desk_crossbeam() {
     color(stud_color)
     stud(stud_under_right_rear_desk_crossbeam_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_under_right_rear_desk_crossbeam_l);
+    }
 }
 
 module stud_under_left_front_desk_crossbeam() {
     color(stud_color)
     stud(stud_under_left_front_desk_crossbeam_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_under_left_front_desk_crossbeam_l);
+    }
 }
 
 module stud_under_left_rear_desk_crossbeam() {
     color(stud_color)
     stud(stud_under_left_rear_desk_crossbeam_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_under_left_rear_desk_crossbeam_l);
+    }
 }
 
 module stud_support_under_front_desk() {
     color(stud_color)
     stud(stud_support_under_front_desk_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_support_under_front_desk_l);
+    }
 }
 
 module stud_right_rear_corner() {
     color(stud_color)
     stud(stud_right_rear_corner_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_right_rear_corner_l);
+    }
 }
 
 module stud_left_rear_corner() {
     color(stud_color)
     stud(stud_left_rear_corner_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_left_rear_corner_l);
+    }
 }
 
 module stud_right_wall_middle() {
     color(stud_color)
     stud(stud_right_wall_middle_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_right_wall_middle_l);
+    }
 }
 
 module stud_left_wall_middle() {
     color(stud_color)
     stud(stud_left_wall_middle_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_left_wall_middle_l);
+    }
 }
 
 module stud_right_wall_top_rear() {
     color(stud_color)
     stud(stud_right_wall_top_rear_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_right_wall_top_rear_l);
+    }
 }
 
 module stud_rear_top_crossbeam() {
     color(stud_color)
     stud(stud_rear_top_crossbeam_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_rear_top_crossbeam_l);
+    }
 }
 
 module stud_hinged_table_support() {
     color(stud_color)
     stud(stud_hinged_table_support_l);
+    if (showDimensions) {
+        color("black")
+        translate([4.5,-1,0])
+        rotate([0,-90,90])
+        dimensions(length=stud_hinged_table_support_l);
+    }
 }
 
 

@@ -212,7 +212,7 @@ units_per_inch = 25.4;
 
 function remove_feet(length) = length*10 - floor((length*10/units_per_inch/12)) * units_per_inch*12;
 
-function fractional_inches(length, inches_denominator = 32) =
+function fractional_inches(length, inches_denominator = 16) =
     find_fraction([round(((length/units_per_inch) - floor(length/units_per_inch))*inches_denominator),inches_denominator]);
 
 function inches_part(length) =
@@ -257,7 +257,7 @@ function convert_to_inches(length) =
     );
 
 module dimensions(length, line_width=DIM_LINE_WIDTH, loc=DIM_CENTER) {
-    inches_denominator = 64;
+    inches_denominator = 16;
 
     text = convert_to_inches(length);
     space = len(text) * DIM_FONTSCALE * 7;
